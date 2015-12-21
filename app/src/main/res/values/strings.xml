@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MusicApp</string>
+    <string name="title_activity_playlist">PlaylistActivity</string>
+    <string name="facebook_app_id">437240306487237</string>
+</resources>

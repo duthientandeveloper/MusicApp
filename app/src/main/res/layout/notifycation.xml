@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"  android:id="@+id/barplay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F51B5">
+    <ImageView
+        android:layout_margin="5dp"
+        android:layout_width="64dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/photo_default"/>
+
+    <TextView
+        android:id="@+id/bar_name"
+        android:layout_margin="5dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:autoText="true"
+        android:text="Listenning Music"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

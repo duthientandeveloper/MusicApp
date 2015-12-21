@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/onall"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backg"
+        android:orientation="vertical">
+
+        <GridView
+            android:id="@+id/gridPlaylist"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:numColumns="3"></GridView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2196F3"
+            android:text="SONG HOT"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/hotsong"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_weight="0.09"></ListView>
+
+        <RelativeLayout
+            android:id="@+id/barplay"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_alignParentBottom="true"
+            android:background="#3F51B5"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imagebar"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/photo_default"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:id="@+id/bntbar"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_toRightOf="@id/imagebar">
+
+                <TextView
+                    android:id="@+id/bar_name"
+                    android:layout_width="134dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:autoText="true"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+
+                <ImageButton
+                    android:id="@+id/bar_back"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/back" />
+
+                <ImageButton
+                    android:id="@+id/bar_play"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/play" />
+
+                <ImageButton
+                    android:id="@+id/bar_next"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/next" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/barbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/bntbar"
+                android:layout_toRightOf="@id/imagebar" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/processbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <ProgressBar
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            />
+    </LinearLayout>
+</RelativeLayout>
